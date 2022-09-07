@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Thic";
+  src: url(/fonts/TTF/THICCCBOI-Regular.ttf);
+}
+
+* {
+  font-family: "Thic";
+}
+
+.logo {
+  margin-left: -120px;
+  margin-top: -45px;
+}
+
+.invite {
+  margin-top: 100px;
+}
+
+.ket {
+  font-size: 75px;
+  color: #1e174d;
+}
+
+.inf {
+  font-size: 32px;
+  color: #1e174d;
+}
+
+.to {
+  font-size: 75px;
+  color: #df6c4a;
+}
+
+.msg {
+  margin-bottom: 100px;
+}
+
+.rtc {
+  margin-top: -137px;
+  margin-left: 1227px;
+  position: absolute;
+}
