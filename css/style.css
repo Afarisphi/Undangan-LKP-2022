@@ -171,7 +171,8 @@ footer {
 
 @media screen and (max-width: 630px) {
   .container-fluid .card-body .time-content .number {
-    font-size: 30px;
+    font-size: 40px;
+    padding-top: 10px;
   }
 }
 
