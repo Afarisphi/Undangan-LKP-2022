@@ -17,11 +17,6 @@
       class="container-fluid"
       style="background-color: #1e174d; height: 40px; width: 100%"
     >
-      <!-- <img
-        src="/assets/image/Illustration1.png"
-        alt=""
-        class="img-fluid logo"
-      /> -->
     </section>
     <section class="container">
       <div class="invite text-center">
@@ -30,11 +25,10 @@
           XIII 2022
         </h1>
         <p class="inf">Undangan spesial untuk</p>
-        <h1 class="to">SMK INFORMATIKA SUMEDANG</h1>
-        <h2>yahaha hayyukk</h2>
+        <h1 class="to" id="to_sekolah"></h1>
         <center>
           <div class="msg">
-            <a href="/Index.html" target="_blank" rel="noopener noreferrer">
+            <a href="/Index.html" rel="noopener noreferrer">
               <img
                 src="/assets/image/MSG1.svg"
                 alt=""
@@ -53,14 +47,8 @@
         background-color: #df6c4a;
         height: 40px;
         width: 100%;
-        margin-top: 73px;
       "
     >
-      <!-- <img
-        src="/assets/image/Rectangle 17 (1).png"
-        alt=""
-        class="img-fluid rtc"
-      /> -->
     </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
@@ -75,33 +63,29 @@
           "/assets/image/MSG2.svg"
         ) {
           document.getElementById("imgClickAndChange").src =
-            "/assets/image/MSG1.svg";
+            "/assets/image/MSG2.svg";
         } else {
           document.getElementById("imgClickAndChange").src =
             "/assets/image/MSG2.svg";
         }
       }
+    </script>
 
-      // function changeImage() {
-      //   document.getElementById("imgClickAndChange").src("/assets/image/MSG2.svg");
-      // }
+    <script>
+      const urlValue = window.location.search;
+      const urlParams = new URLSearchParams(urlValue);
+      const sekolah = urlParams.get('sekolah');
 
-      // function changeImage() {
-      //   if (
-      //     document.getElementById("imgClickAndChange").src ==
-      //     "/assets/image/MSG2.svg"
-      //   ) {
-      //     var arrow = "/assets/image/MSG2.svg";
-      //     return arrow;
-      //   } else {
-      //     var arrow = "/assets/image/MSG2.svg";
-      //     return arrow;
-      //   }
-      // }
+      console.log('ini url'+sekolah);
 
-      // function changeImage() {
-      //   document.getElementById("imgClickAndChange").src = myChevron();
-      // }
+      if(sekolah !== null){
+        if(sekolah == sekolah){
+
+          document.getElementById("to_sekolah").innerHTML = sekolah;
+        }
+      }else{
+        document.getElementById("to_sekolah").innerHTML = "TAHUNGODING";
+      }
     </script>
   </body>
 </html>
