@@ -37,20 +37,87 @@
   width: 30%;
   max-height: 100%;
 }
+@media screen and (max-width: 767px) 
+{
+  .invite {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
 
-.ket {
-  font-size: 75px;
-  color: #1e174d;
+  .shape-header{
+    background-color: #df6c4a;
+    width: 20vh;
+    height: 15vh;
+    border-radius: 0px 100px 150px 1px;
+  }
+  
+  .shape-footer{
+    background-color: #1e174d;
+    width: 20vh;
+    height: 15vh;
+    border-radius: 150px 10px 0px 150px;
+  }
+  
+  .logo-atas{
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    width: 30%;
+    max-height: 100%;
+  }
+
+  .ket {
+    font-size: 65px;
+    color: #1e174d;
+  }
+
+  .to {
+    font-size: 65px;
+    color: #df6c4a;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .invite {
+    margin-top: 150px;
+  }
+
+  .shape-header{
+    background-color: #df6c4a;
+    width: 25vh;
+    height: 15vh;
+    border-radius: 0px 100px 150px 1px;
+  }
+  
+  .shape-footer{
+    background-color: #1e174d;
+    width: 25vh;
+    height: 15vh;
+    border-radius: 150px 10px 0px 150px;
+  }
+  
+  .logo-atas{
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    width: 30%;
+    max-height: 100%;
+  }
+
+  .ket {
+    font-size: 75px;
+    color: #1e174d;
+  }
+
+  .to {
+    font-size: 75px;
+    color: #df6c4a;
+  }
 }
 
 .inf {
   font-size: 32px;
   color: #1e174d;
-}
-
-.to {
-  font-size: 75px;
-  color: #df6c4a;
 }
 
 .msg {
@@ -62,3 +129,4 @@
   margin-left: 1227px;
   position: absolute;
 }
+
