@@ -201,6 +201,18 @@ footer {
   }
 }
 
+@media screen and (max-width: 630px) {
+  .galeri-section .galeri {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .container .lokasi {
+    font-size: 24px;
+  }
+}
+
 a:link {
   text-decoration: none;
 }
