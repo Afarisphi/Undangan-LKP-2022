@@ -1,41 +1,23 @@
-// Countdown
-const seconds = document.querySelector(".seconds .number");
-minutes = document.querySelector(".minutes .number");
-hours = document.querySelector(".hours .number");
-days = document.querySelector(".days .number");
-console.log(seconds, minutes, hours, days);
+const countdown = () => {
+  const countDate = new Date("Oct 30, 2022 07:00:00").getTime();
+  // console.log(countDate);
+  const now = new Date().getTime();
+  const gap = countDate - now;
 
-let secValue = 11;
-minValue = 2;
-hourValue = 2;
-dayValue = 10;
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
 
-const timeFunction = setInterval(() =>  {
-  secValue--;
+  const textDay = Math.floor(gap / day);
+  const textHour = Math.floor((gap % day) / hour);
+  const textMinute = Math.floor((gap % hour) / minute);
+  const textSecond = Math.floor((gap % minute) / second);
 
-  if (secValue === 0) {
-    minValue--;
-    secValue = 60;
-  }
+  document.querySelector(".hari").innerText = textDay;
+  document.querySelector(".jam").innerText = textHour;
+  document.querySelector(".menit").innerText = textMinute;
+  document.querySelector(".detik").innerText = textSecond;
+};
 
-  if (minValue === 0) {
-    hourValue--;
-    minValue = 60;
-  }
-
-  if (hourValue === 0) {
-    dayValue--;
-    hourValue = 60;
-  }
-
-  if (dayValue === 0) {
-    clearInterval(timeFunction);
-  }
-
-console.log(secValue);
-seconds.textContent = secValue < 10 ? `0${secValue}` : secValue;
-minutes.textContent = minValue < 10 ? `0${minValue}` : minValue;
-hours.textContent = hourValue < 10 ? `0${hourValue}` : hourValue;
-days.textContent = dayValue < 10 ? `0${dayValue}` : dayValue;
-
-},1000);
+setInterval(countdown, 1000);
