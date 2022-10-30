@@ -215,7 +215,7 @@ footer {
 
 @media screen and (max-width: 630px) {
   .container .card-body .card-subtitle {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
